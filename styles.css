@@ -1,0 +1,94 @@
+body, h1, h2, h3, p, ul, li, nav {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: rgb(214, 98, 98);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(223, 124, 124);
+}
+
+/* About Section Styling */
+#about {
+    text-align: center;
+    padding: 2em;
+    background-color: #c26b6b;
+}
+
+#about img {
+    border: 2px solid rgb(138, 156, 140);
+    width: 150px;
+    border-radius: 100%;  
+}
+
+
+/* Skills Section Styling */
+#skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.skill {
+    flex: 1;
+    min-width: 150px;
+    margin: 1em;
+    text-align: center;
+    background: #aa8181;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+/* Projects Section Styling */
+#projects {
+    display: flex;
+    justify-content: space-evenly;
+}
+#projects .project {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #9e7274;
+}
+
+#projects img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Contact Section Styling */
+#contact {
+    background: #e4dada;
+    padding: 2em;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        flex-basis: 100%;
+    }
+}
